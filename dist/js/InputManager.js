@@ -73,6 +73,10 @@ define(function () {
                 document.querySelector('.btn-restart').addEventListener('click', function () {
                     _this.emit('restart');
                 }, false);
+
+                document.querySelector('#canvas').addEventListener('click', function () {
+                    alert('Drag to place your piece.');
+                });
             }
         }]);
 

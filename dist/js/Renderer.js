@@ -38,8 +38,8 @@ define(['Tile', 'UnitManager'], function (Tile, Unit) {
         _createClass(Renderer, [{
             key: 'render',
             value: function render(_ref) {
-                var grid = _ref.grid;
-                var cursorPos = _ref.cursorPos;
+                var grid = _ref.grid,
+                    cursorPos = _ref.cursorPos;
 
                 var ctx = this.ctx;
                 ctx.clearRect(0, 0, this.width, this.height);

@@ -58,6 +58,10 @@ define(() => {
             document.querySelector('.btn-restart').addEventListener('click', () => {
                 this.emit('restart')
             }, false)
+
+            document.querySelector('#canvas').addEventListener('click', () => {
+                alert('Drag to place your piece.')
+            })
         }
     }
 

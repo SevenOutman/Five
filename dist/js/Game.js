@@ -44,8 +44,8 @@ define(['InputManager', 'Renderer', 'GameData', 'Tile', 'Grid', 'Lily'], functio
                 var _this2 = this;
 
                 this.inputManager.on('movecursor', function (_ref) {
-                    var x = _ref.x;
-                    var y = _ref.y;
+                    var x = _ref.x,
+                        y = _ref.y;
 
                     if (_this2.turn) {
                         if (_this2.isRunning()) {
