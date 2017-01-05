@@ -1,0 +1,267 @@
+html,
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    -webkit-user-select: none;
+}
+
+html {
+    font-family: Lato, "Helvetica Neue", open-sans, monospace, sans-serif;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    font-size: .16rem;
+}
+
+html,
+body {
+    background: #092531;
+    color: #ffffff;
+    overflow: hidden;
+}
+html {
+    width: 100%;
+    height: 100%;
+    font-family: Lato, "Helvetica Neue", open-sans, monospace, sans-serif;
+}
+
+body {
+    margin: .2rem 0;
+    padding: 0 .2rem;
+    font-size: .16rem;
+}
+
+.container {
+    width: 7.1rem;
+    margin: 0 auto;
+}
+
+.heading {
+    height: .5rem;
+}
+
+.heading h1 {
+    margin: 0;
+}
+
+.intro a.btn-new {
+    float: right;
+    width: 40%;
+    height: .4rem;
+    padding: .05rem;
+    background: #11445a;
+    border-radius: .05rem;
+    line-height: .3rem;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.intro p {
+    width: 55%;
+    margin: 0;
+    font-size: .16rem;
+    line-height: 1.25;
+}
+
+.game-container {
+    position: relative;
+    width: 7.1rem;
+    height: 7.1rem;
+    margin-top: 2rem;
+    padding: .05rem;
+    background: #ffffff;
+    border-radius: .05rem;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.game-message {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    z-index: 3;
+    font-weight: bold;
+    display: none;
+
+    -webkit-animation: fade-in 500ms ease 500ms;
+    -moz-animation: fade-in 500ms ease 500ms;
+    animation: fade-in 500ms ease 500ms;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.game-message.game-won {
+    /*background: rgba(219, 251, 253, 0.5);*/
+    /*color: #ffffff;*/
+}
+
+.game-message.game-won,
+.game-message.game-over {
+    display: block;
+}
+.game-message p {
+    font-size: 3rem;
+    font-weight: bold;
+    height: 3rem;
+    color: #11445a;
+    line-height: 3rem;
+    margin-top: 10rem;
+}
+
+.btn-restart {
+    display: inline-block;
+    background: #11445a;
+    border-radius: 3px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #ffffff;
+    height: 40px;
+    line-height: 42px;
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+.grid-container {
+    position: absolute;
+    z-index: 1;
+}
+
+.grid-row {
+    margin-bottom: .05rem;
+}
+
+.grid-row:last-child {
+    margin-bottom: 0;
+}
+
+.grid-row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.grid-cell {
+    width: 1.36rem;
+    height: 1.36rem;
+    margin-right: .05rem;
+    float: left;
+    border-radius: .03rem;
+    background: #11445a;
+}
+
+.grid-cell:last-child {
+    margin-right: 0;
+}
+
+.tile-container {
+    position: relative;
+    z-index: 2;
+}
+
+.tile {
+    position: absolute;
+    width: 5.4rem;
+    height: 5.4rem;
+    border-radius: .3rem;
+
+    -webkit-animation: fade-in 500ms ease;
+    -moz-animation: fade-in 500ms ease;
+    animation: fade-in 500ms ease;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.tile.tile-red {
+    background: rgb(255, 175, 205);;
+}
+
+.tile.tile-blue {
+    background: rgb(95, 211, 255);;
+}
+
+.tile.tile-row-0 {
+    top: 0;
+}
+
+.tile.tile-row-1 {
+    top: 5.9rem;
+}
+
+.tile.tile-row-2 {
+    top: 11.8rem;
+}
+
+.tile.tile-row-3 {
+    top: 17.7rem;
+}
+
+.tile.tile-row-4 {
+    top: 23.6rem;
+}
+
+.tile.tile-col-0 {
+    left: 0;
+}
+
+.tile.tile-col-1 {
+    left: 5.9rem;
+}
+
+.tile.tile-col-2 {
+    left: 11.8rem;
+}
+
+.tile.tile-col-3 {
+    left: 17.7rem;
+}
+
+.tile.tile-col-4 {
+    left: 23.6rem;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
